@@ -1,0 +1,56 @@
+/* This is my navbar */ 
+h1 {
+    color: white;
+}
+
+header {
+    background-color: #333; /* set background color */
+    height: 50px; /* set navbar height */
+    display: flex; /* display items side by side */
+    justify-content: space-between; /* align items horizontally */
+    align-items: center; /* align items vertically */
+    padding: 0 20px; /* add padding */
+}
+
+ul {
+    list-style: none; /* remove bullets from list */
+    display: flex; /* display items side by side */
+    margin: 0; /* remove default margin */
+}
+
+
+li {
+    margin-right: 20px; /* add space between list items */
+    position: relative; /* enable absolute positioning for dropdown */
+}
+  
+a {
+    color: #fff; /* set link color */
+    text-decoration: none; /* remove underline */
+    font-size: 18px; /* set font size */
+}
+
+.dropdown ul {
+    display: none; /* hide dropdown menu by default */
+    position: absolute; /* position dropdown menu absolutely */
+    top: 100%; /* align dropdown menu below parent li */
+    left: 0; /* align dropdown menu to the left */
+    min-width: 100%; /* set minimum width for dropdown menu */
+    background-color: #333; /* set background color for dropdown menu */
+    padding: 10px; /* add padding to dropdown menu */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* add box shadow to dropdown menu */
+}
+
+.dropdown:hover ul {
+    display: block; /* display dropdown menu when hovering over parent li */
+}
+
+a {
+    color: #fff; /* set link color */
+    text-decoration: none; /* remove underline */
+    font-size: 18px; /* set font size */
+    display: block; /* enable full width for link */
+    padding: 10px; /* add padding to link */
+}
+
+  
